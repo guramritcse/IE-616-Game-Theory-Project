@@ -1,6 +1,6 @@
 import random
 
-numpalyers = int(input("Type the number of players: ")) # Number of players
+num_players = int(input("Type the number of players: ")) # Number of players
 chocofrac = round(60*random.random() + 20)              # Percentage of chocolate in cake
 vanillafrac = 100 - chocofrac                           # Percentage of vanilla in cake
 
@@ -9,7 +9,7 @@ print("The current cake has " + str(chocofrac) + " percentage of chocolate toppi
 print("Player 1 gets to cut the cake ...")
 
 #################################### 2 PLAYER GAME ####################################
-if numpalyers == 2:
+if num_players == 2:
     piece = [[0,0], [0,0]]                              # pieces' specifications
 
     print("Enter piece 1 details")
@@ -47,7 +47,7 @@ if numpalyers == 2:
         + "% vanilla")
 
 #################################### 3 PLAYER GAME ####################################
-elif numpalyers == 3:
+elif num_players == 3:
     piece = [[0,0], [0,0], [0, 0]]                          # pieces' specifications
     trim = [[0,0], [0,0], [0, 0]]                           # trimming pieces' specifications
 
